@@ -1,7 +1,6 @@
-[![Device](https://cdn-images-1.medium.com/max/800/1*ddJUtOayzmuA0_Ynkgu9Jg.jpeg)](https://madeas.github.io/box-shadows/device/)
-
 # Box-shadows Device
-<p><a href="https://github.com/madeas/box-shadows.css"><img src="https://github.com/madeas/box-shadows.css/blob/master/logotype.png?raw=true" alt="Logo" width="74" height="74" align="right" data-canonical-src="https://github.com/madeas/box-shadows.css/blob/master/logotype.png" style="max-width:100%;"></a></p>
+
+[![Device](https://cdn-images-1.medium.com/max/800/1*ddJUtOayzmuA0_Ynkgu9Jg.jpeg)](https://madeas.github.io/box-shadows/device/)
 
 ## About the project
 **Box-shadows Device (BSD)** is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures, adaptive design and much more.
