@@ -7,7 +7,7 @@ $(function() {
   });
 });
 
-// функция днд
+// функция drag-and-drop
 $(function() {
   $('#dragshadow').draggable();
   $('#dragdisplay').draggable()
@@ -25,7 +25,7 @@ $('.btn').click(function() {
   $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
 });
 
-// type=color 
+// type='color'
 document.getElementById('bg_choose').onchange = e => {
   document.getElementById('choose').textContent = e.target.value;
   document.getElementById('bSm').style.backgroundColor = e.target.value;
@@ -33,7 +33,7 @@ document.getElementById('bg_choose').onchange = e => {
   ecls.dataset.cls = e.target.value;
 }
 
-// бегущая строка на дисплее
+// бегущая строка typed display
 var typed = new Typed("#typed", {
   strings: [
     'Can place here:',
@@ -56,7 +56,7 @@ var typed = new Typed("#typed", {
   }
 });
 
-// стоп - старт по клику
+// текст стоп/старт по клику
 var checkbox = document.querySelector("input[id=typstop]");
 checkbox.addEventListener('change', function() {
   if (this.checked) {
@@ -68,7 +68,7 @@ checkbox.addEventListener('change', function() {
   }
 });
 
-// сброс - рестарт по клику
+// текст сброс/рестарт по клику
 var checkbox = document.querySelector("input[id=typdest]");
 checkbox.addEventListener('change', function() {
   if (this.checked) {
@@ -87,7 +87,7 @@ document.getElementById('adstl').onchange = e => {
   document.getElementById('bSm').style = e.target.value;
 }
 
-// добавление класса в дисплей
+// добавление классов в id='display'
 $(function() {
   var b = $('.btn_dis_cls');
   b.click(function() {
@@ -96,7 +96,7 @@ $(function() {
   });
 });
 
-// функция копирования кода в буфер
+// сохранение кода в буфер обмена
 var button = document.querySelector('.copy_code');
 button.addEventListener('click', function(event) {
   var text = document.querySelector('#form_code');
