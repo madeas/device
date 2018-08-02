@@ -135,13 +135,13 @@ NodeList.prototype.forEach = Array.prototype.forEach;
 document.getElementById('reset').addEventListener('click', function(e) {
   var sideLeft = document.getElementById('sidebar-left');
   var sideRight = document.getElementById('sidebar-right');
-  var inputsL = sideLeft.querySelectorAll('input');
-  var inputsR = sideRight.querySelectorAll('input');
+  var inputsL = sideLeft.querySelectorAll('input[type=radio]');
+  var inputsR = sideRight.querySelectorAll('input[type=radio]');
   inputsL.forEach(function(el) {
     el.checked = false;
   });
   inputsR.forEach(function(el) {
     el.checked = false;
   });
-  bSm.style = ''
+  bSm.style = '';
 });
