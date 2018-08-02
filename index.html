@@ -83,9 +83,9 @@
           <div class="row">
             <div class="col-md-12">
               <p class="lead mb-3" itemprop="description">Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures, adaptive design and much more.</p>
-              <p class="text-right"><a class="github-button" href="https://github.com/madeas/box-shadows.css" data-show-count="true" aria-label="Star madeas/box-shadows.css on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/box-shadows.css/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/box-shadows.css on GitHub">Fork</a></p>
+              <p class="text-right"><a class="github-button" href="https://github.com/madeas/device" data-show-count="true" aria-label="Star madeas/device on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/device/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/device on GitHub">Fork</a></p>
             </div>
-            <div class="sidebar sidebar-left col-md-12 col-lg-3">
+            <div class='sidebar sidebar-left col-md-12 col-lg-3' id='sidebar-left'>
               <h2>Device</h2>
               <ul class="f1rem nav">
                 <li class="nav-item"><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
@@ -190,7 +190,7 @@
 			<div class="display" id="display">
 				 <span id="typed"></span>
 			</div>
-			<div class="back"><span>create your device</span></div>
+			<div class='back' id='back'><span>create your device</span></div>
 			</div>
 		</label>
               <div class="pt-5 w-100 text-center">
@@ -198,7 +198,7 @@
 		<p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
 		<label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label></div>
             </div>
-            <div class="sidebar sidebar-right col-md-12 col-lg-3">
+            <div class='sidebar sidebar-right col-md-12 col-lg-3' id='sidebar-right'>
               <h2 class='text-right'>Background</h2>
               <ul class="f1rem nav justify-content-end">
                 <li class="nav-item"><label><input type='radio' class='btn' name='bg' data-stl='{
@@ -251,9 +251,45 @@
               </ul>
               </div>
             </div>
-            <div class="col-md-12 pt-5 text-center">
+
+            <div class='col-md-12 py-3 f1rem back_style'>
+              <p class='px-2'><button class="get_collapse" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add sticker</button><span class='sticker'>Click to add a sticker to the back cover</span></p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body d-flex flex-column">
+                  <h5>background-image: url(<input type='text' id='bgImage' placeholder='https://images.png' value='https://madeas.github.io/box-shadows/device/img/back_image.png' class='adstl w-auto'>);</h5>
+
+                  <div class='d-flex'>
+                    <div class='mr-2'>
+                      <h5>background-repeat:</h5>
+                      <ul class='list-inline bradio'>
+                        <li><input type='radio' name='repeat' id='norep' checked><label for='norep'>no-repeat</label></li>
+                        <li><input type='radio' name='repeat' id='repXY'><label for='repXY'>repeat</label></li>
+                        <li><input type='radio' name='repeat' id='repX'><label for='repX'>repeat-x</label></li>
+                        <li><input type='radio' name='repeat' id='repY'><label for='repY'>repeat-y</label></li>
+                      </ul>
+                    </div>
+                    <div class='mx-2'>
+                      <h5>background-size:</h5>
+                      <ul class='list-inline bradio'>
+                        <li><label id='bnoradio'><input type='number' id='sizeIn' value='150' name='size' class='adstl bsize'> px</label></li>
+                        <li class='bsckeck'><input type='checkbox' id='sizeOne' name='size'><label for='sizeOne'>cover</label></li>
+                        <li class='bsckeck'><input type='checkbox' id='sizeTwo' name='size'><label for='sizeTwo'>contain</label></li>
+                      </ul>
+                    </div>
+                    <div class='ml-2'>
+                      <h5>background-position:</h5>
+                      <ul class='list-inline'>
+                        <li>Left: <label><input id='posX' type='number' min='0' max='100' value='50' class='adstl bsize'> %</label></li>
+                        <li>Top: <label><input id='posY' type='number' min='0' max='100' value='70' class='adstl bsize'> %</label></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 pt-2 text-center">
               <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
-              <script>reset.onclick=()=>bSm.style=''</script>
               <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1" data-toggle="modal" data-target="#ModalCenter">Get code</button>
             </div>
           </div>
@@ -292,7 +328,8 @@
     <script src="//madeas.github.io/box-shadows/js/bootstrap.min.js"></script>
     <script src="//usocial.pro/usocial/usocial.js?v=6.1.4" async data-script="usocial"></script>
     <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,telegram,twi,vk"></div>
-    <script>	  
+    <script>
+      // добавление класса
       $(function() {
         var b = $('.btn_cls');
         b.click(function() {
@@ -301,13 +338,15 @@
         });
       });
 
+      // функция drag-and-drop
       $(function() {
         $('#dragshadow').draggable();
         $('#dragdisplay').draggable()
-        $('#dragposition').draggable();;
+        $('#dragposition').draggable();
         $('#dragblock').draggable();
       });
 
+      //добавление стилей из data-stl и выведение в поле #form_code
       $('.btn').click(function() {
         $('#bSm').css($(this).data('stl'));
 
@@ -317,6 +356,7 @@
         $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
       });
 
+      // type='color'
       document.getElementById('bg_choose').onchange = e => {
         document.getElementById('choose').textContent = e.target.value;
         document.getElementById('bSm').style.backgroundColor = e.target.value;
@@ -324,28 +364,30 @@
         ecls.dataset.cls = e.target.value;
       }
 
+      // бегущая строка typed display
       var typed = new Typed("#typed", {
         strings: [
           'Can place here:',
           'code <br /><pre><span class="pl-e">.display</span> {<br /><span class="pl-c1"><span class="pl-c1">  border-radius</span></span>: <span class="pl-c1">8<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  min-height</span></span>: <span class="pl-c1">185<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  padding</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>;<br />}</pre>',
           'pictures,',
           'responsive design,',
-          'and much more...',		  
+          'and much more...',
         ],
-        onStop: (arrayPos, self) => {
+        onStop: (arrayPos, self) => { // остановка текста по клику
           console.log('onStop', arrayPos, self);
         },
-        onStart: (arrayPos, self) => {
+        onStart: (arrayPos, self) => { // старт текста по клику
           console.log('onStart', arrayPos, self)
         },
-        onDestroy: (arrayPos, self) => {
+        onDestroy: (arrayPos, self) => { // удаление текста
           console.log('onDestroy', arrayPos, self)
         },
-        onReset: (arrayPos, self) => {
+        onReset: (arrayPos, self) => { // сброс текста
           console.log('onReset', arrayPos, self)
         }
       });
 
+      // текст стоп/старт по клику
       var checkbox = document.querySelector("input[id=typstop]");
       checkbox.addEventListener('change', function() {
         if (this.checked) {
@@ -357,6 +399,7 @@
         }
       });
 
+      // текст сброс/рестарт по клику
       var checkbox = document.querySelector("input[id=typdest]");
       checkbox.addEventListener('change', function() {
         if (this.checked) {
@@ -368,12 +411,14 @@
         }
       });
 
+      // генератор стилей
       document.getElementById('adstl').onchange = e => {
         let ecls = document.querySelector('#adstl');
         ecls.dataset.cls = e.target.value;
         document.getElementById('bSm').style = e.target.value;
       }
 
+      // добавление классов в id='display'
       $(function() {
         var b = $('.btn_dis_cls');
         b.click(function() {
@@ -382,6 +427,7 @@
         });
       });
 
+      // сохранение кода в буфер обмена
       var button = document.querySelector('.copy_code');
       button.addEventListener('click', function(event) {
         var text = document.querySelector('#form_code');
@@ -389,6 +435,7 @@
         document.execCommand('copy');
       });
 
+      // автосайз поля с кодом
       var textarea = document.querySelector('.custom-textarea');
       textarea.addEventListener('keydown', autosize);
 
@@ -398,6 +445,37 @@
           el.style.cssText = 'height:' + el.scrollHeight + 'px';
         }, 0);
       }
+
+      // добавление стикера на заднюю крышку
+      var back = document.querySelector("#back"),
+        x = document.querySelector("#posX"),
+        y = document.querySelector('#posY'),
+        so = document.querySelector('#sizeOne'),
+        st = document.querySelector('#sizeTwo'),
+        si = document.querySelector('#sizeIn');
+      (style = () => {
+        back.style.background = 'url(' + document.querySelector("#bgImage").value + ') ' + document.querySelector('[name="repeat"]:checked').parentNode.textContent + ' ' + x.value + '% ' + y.value + '%';
+        // back.style.background = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
+        back.style.backgroundSize = so.checked ? 'cover' : st.checked ? 'contain' : si.value + 'px';
+      })();
+      document.querySelectorAll('input').forEach(el => el.oninput = style);
+
+      // сброс стилей и кнопок
+      NodeList.prototype.forEach = Array.prototype.forEach;
+
+      document.getElementById('reset').addEventListener('click', function(e) {
+        var sideLeft = document.getElementById('sidebar-left');
+        var sideRight = document.getElementById('sidebar-right');
+        var inputsL = sideLeft.querySelectorAll('input[type=radio]');
+        var inputsR = sideRight.querySelectorAll('input[type=radio]');
+        inputsL.forEach(function(el) {
+          el.checked = false;
+        });
+        inputsR.forEach(function(el) {
+          el.checked = false;
+        });
+        bSm.style = '';
+      });
 
     </script>
 
