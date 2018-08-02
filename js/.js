@@ -115,5 +115,33 @@ function autosize() {
   }, 0);
 }
 
-// сброс стилей по клику
-reset.onclick = () => bSm.style = ''
+// добавление стикера на заднюю крышку
+var back = document.querySelector("#back"),
+  x = document.querySelector("#posX"),
+  y = document.querySelector('#posY'),
+  so = document.querySelector('#sizeOne'),
+  st = document.querySelector('#sizeTwo'),
+  si = document.querySelector('#sizeIn');
+(style = () => {
+  back.style.background = 'url(' + document.querySelector("#bgImage").value + ') ' + document.querySelector('[name="repeat"]:checked').parentNode.textContent + ' ' + x.value + '% ' + y.value + '%';
+  // back.style.background = `url(${document.querySelector("#bgImage").value}) black ${document.querySelector('[name="repeat"]:checked').parentNode.textContent} ${x.value}% ${y.value}%`;
+  back.style.backgroundSize = so.checked ? 'cover' : st.checked ? 'contain' : si.value + 'px';
+})();
+document.querySelectorAll('input').forEach(el => el.oninput = style);
+
+// сброс стилей и кнопок
+NodeList.prototype.forEach = Array.prototype.forEach;
+
+document.getElementById('reset').addEventListener('click', function(e) {
+  var sideLeft = document.getElementById('sidebar-left');
+  var sideRight = document.getElementById('sidebar-right');
+  var inputsL = sideLeft.querySelectorAll('input');
+  var inputsR = sideRight.querySelectorAll('input');
+  inputsL.forEach(function(el) {
+    el.checked = false;
+  });
+  inputsR.forEach(function(el) {
+    el.checked = false;
+  });
+  bSm.style = ''
+});
