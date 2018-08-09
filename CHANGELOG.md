@@ -48,3 +48,7 @@
 * 4 colors devices and the ability to create your own color
 * 5 types of shadows
 * Buttons: Camera, Dynamic, 2 Bottom Line Buttons
+
+[Top ↑][top]
+
+[top]: #changes-in-the-functionality-of-devices
