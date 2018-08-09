@@ -8,7 +8,7 @@
 ### August 07, 2018
 
 * Add function 3d "Rotation device"
-* Added types of shadows - Peach
+* Added types of background - Peach
 * Improved visual mapping the dynamics and the bottom buttons
 
 ### August 03, 2018
