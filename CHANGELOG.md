@@ -18,7 +18,7 @@
 
 ### August 01, 2018
 
-* Added the ability to paste stickers on the back of the deviсу - "Add sticker"
+* Added the ability to paste stickers on the back panel of the deviсe - "Add sticker"
 * Reset all settings button
 
 ### July 30, 2018
