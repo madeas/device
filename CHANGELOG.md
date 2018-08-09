@@ -9,7 +9,7 @@
 
 * Add function 3d "Rotation device"
 * Added types of background - Peach
-* Improved visual mapping the dynamics and the bottom buttons
+* Improved visual mapping the camera, dynamics and the bottom buttons
 
 ### August 03, 2018
 
