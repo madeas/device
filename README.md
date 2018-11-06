@@ -1,9 +1,9 @@
-# Box-shadows Device
+# Device Creator
 
 [![Device](https://cdn-images-1.medium.com/max/800/1*ddJUtOayzmuA0_Ynkgu9Jg.jpeg)](https://madeas.github.io/box-shadows/device/)
 
 ## About the project
-**Box-shadows Device (BSD)** is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures, adaptive design and much more.
+**Device Creator** is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures, adaptive design and much more.
 By experimenting with buttons, you can use the tool to create, for example, the smartphone of your dreams. Toggle buttons, merge, change the size of the display, the color of the panel, etc. Do you dream of a pink apple? Please =)
 
 [![Device](https://cdn-images-1.medium.com/max/800/1*8kSK3bYQ9SeK8PH9-i8EhQ.jpeg)](https://madeas.github.io/box-shadows/device/)
