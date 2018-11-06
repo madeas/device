@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
 
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <meta name="description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website" />
@@ -16,16 +16,18 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800">
 
     <!-- General Style -->
-    <link rel="stylesheet" href="//madeas.github.io/box-shadows/device/css/box-shadows.min.css">
-    <link rel="stylesheet" href="//madeas.github.io/box-shadows/device/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//madeas.github.io/box-shadows/device/css/default.min.css">
-    <link rel="stylesheet" href="//madeas.github.io/css/git-colors.css">
+    <link rel="stylesheet" href="https://madeas.github.io/css/body_loader.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://madeas.github.io/box-shadows/device/css/box-shadows.min.css">
+    <link rel="stylesheet" href="https://madeas.github.io/box-shadows/device/css/default.css">
+    <link rel="stylesheet" href="https://madeas.github.io/box-shadows/css/git-colors.css">
 
     <!-- DNS -->
-    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
-    <link rel='dns-prefetch' href='//buttons.github.io' />
-    <link rel='dns-prefetch' href='//code.jquery.com' />
-    <link rel='dns-prefetch' href='//usocial.pro' />
+    <link rel='dns-prefetch' href='https://fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='https://stackpath.bootstrapcdn.com' />
+    <link rel='dns-prefetch' href='https://buttons.github.io' />
+    <link rel='dns-prefetch' href='https://code.jquery.com' />
+    <link rel='dns-prefetch' href='https://usocial.pro' />
 
     <!-- Social meta tegs -->
     <meta property="og:title" content="Box-shadows Device (BSD) – create your device">
@@ -46,600 +48,695 @@
     <meta name="twitter:title" content="Box-shadows Device (BSD) – create your device">
     <meta name="twitter:description" content="Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website">
     <meta name="twitter:image" content="https://madeas.github.io/box-shadows/device/img/tw_image400х400.jpg"><!-- 1x1 min 120x120 -->
-  </head>
+</head>
 
-  <body>
-    <div class="d-flex w-100 h-100 mx-auto flex-column">
-      <a href="https://github.com/madeas/device" class="github-logo" itemprop="url" aria-label="View source on Github" target="_blank">
-		<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#47c9e5; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
-			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-			<path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#47c9e5" style="transform-origin: 130px 106px;" class="arm"></path>
-			<path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="#47c9e5"></path>
-		</svg>
-	</a>
-      <header itemscope itemtype="http://schema.org/WPHeader" id="masthead" role="banner" class="masthead container pt-3 pb-2">
-        <div class="row">
-          <div class="masthead-brand col-md-12 col-lg-9">
-            <svg class="bShadow-inset" width="56" height="56" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
-		<title>Box-shadows.css</title>
-			<path fill="#fff" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
-			<path fill="#47c9e5" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
-		</svg>
-            <h1 itemprop="headline">Box-shadows Device</h1>
-          </div>
-          <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav nav-masthead justify-content-center px-3 col-md-12 col-lg-3">
-            <a itemprop="url" class="nav-link active" href='/box-shadows/device/' title='Box-shadows Device'>BSD</a>
-            <a itemprop="url" class="nav-link" href='https://madeas.github.io/box-shadows' title='Box-shadows.css' target='_blank'>BS.CSS</a>
-          </nav>
+<body>
+
+    <div id="body_loader">
+        <div class="body_pre">
+            <div class="pre_loader">
+                <svg aria-labelledby="preloader-madeas-github-icon" class="pre_img" width="64" height="64" viewBox="0 0 192 192"
+                    role="img" xmlns="http://www.w3.org/2000/svg">
+                    <title id="preloader-madeas-github-icon">Preloader svg madeas icon</title>
+                    <g transform="translate(0.000000,192.000000) scale(0.100000,-0.100000)" fill="white" stroke="none">
+                        <path d="M890 1900 c0 -6 18 -49 40 -96 45 -97 43 -110 -22 -139 -59 -26 -50 -38 38 -50 75 -11 164 -35 203 -55 57 -30 110 -126 127 -231 13 -83 8 -237 -12 -332 -9 -43 -29 -18 -59 74 -20 59 -31 79 -43 77 -19 -4 -60 -82 -67 -131 -5 -30 -2 -38 25 -60 17 -15 50 -32 73 -39 23 -6 43 -12 44 -13 2 -1 -6 -24 -17 -53 -11 -28 -22 -66 -26 -84 -8 -44 -9 -49 -23 -81 -6 -16 -8 -34 -4 -40 4 -7 8 -43 10 -81 2 -73 10 -142 17 -155 17 -27 163 5 228 51 16 11 40 22 55 24 33 6 56 26 58 51 0 10 15 39 32 63 25 37 72 128 78 150 17 65 14 62 71 57 39 -3 59 0 79 13 26 17 51 55 50 75 -3 30 -20 83 -33 104 l-16 23 -20 -25 c-12 -14 -32 -43 -45 -66 -32 -54 -56 -63 -45 -18 12 47 8 182 -7 236 -14 52 -64 158 -85 178 -8 8 -14 18 -14 22 0 12 -110 117 -167 159 -29 22 -101 66 -160 98 -85 46 -126 77 -194 144 -47 47 -98 102 -113 123 -27 35 -56 49 -56 27z" />
+                        <path d="M620 1530 c-45 -9 -104 -34 -140 -60 -15 -11 -39 -20 -53 -20 -29 0 -44 -16 -51 -54 -5 -26 -27 -61 -51 -78 -5 -4 -7 -8 -2 -8 4 0 -4 -18 -18 -40 -14 -22 -23 -40 -20 -40 3 0 -1 -10 -10 -23 -8 -12 -16 -32 -18 -42 -4 -28 -17 -46 -27 -40 -5 3 -31 6 -57 7 -41 0 -50 -3 -76 -32 -25 -28 -29 -39 -25 -75 6 -47 27 -97 44 -102 7 -2 26 20 43 50 17 29 40 62 51 72 21 19 21 19 15 -16 -14 -72 -7 -193 15 -264 12 -38 27 -77 34 -85 6 -8 18 -28 26 -45 42 -84 233 -241 389 -320 29 -14 60 -32 69 -38 25 -21 165 -160 212 -212 39 -43 45 -47 48 -29 2 11 -15 58 -37 104 l-41 84 22 23 c12 13 27 23 34 23 6 0 22 8 35 18 l22 19 -29 7 c-16 4 -45 9 -64 12 -215 23 -279 80 -327 289 -5 22 -4 229 1 260 13 81 19 95 32 84 11 -9 40 -82 48 -122 6 -28 19 -47 32 -47 19 0 61 77 69 126 6 38 4 43 -30 71 -20 17 -52 33 -74 37 -34 5 -38 9 -34 28 3 13 9 28 13 33 8 10 26 71 34 115 2 14 9 37 16 52 8 16 9 34 5 45 -5 10 -9 50 -11 88 -2 78 -9 128 -19 144 -7 12 -42 13 -95 1z" />
+                    </g>
+                </svg>
+            </div>
         </div>
-      </header>
+    </div>
 
-      <main itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/WebPageElement" role="main" class="bShadow-7 main">
-        <div class="default-hovered main-top animated-text d-flex justify-content-center">
-          <h4>Create the device of your dreams</h4>
-          <h4>It's simple</h4>
-        </div>
+    <div class="d-flex w-100 h-100 mx-auto flex-column shape">
+        <a href="https://github.com/madeas/device" class="github-logo" itemprop="url" aria-label="View source on Github" target="_blank">
+            <svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#47c9e5; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+                <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+                <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="#47c9e5" style="transform-origin: 130px 106px;" class="arm"></path>
+                <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="#47c9e5"></path>
+            </svg>
+        </a>
+        <header itemscope itemtype="http://schema.org/WPHeader" id="masthead" role="banner" class="masthead container pt-3 pb-2">
+            <div class="row">
+                <div class="masthead-brand col-md-12 col-lg-9">
+                    <svg class="bShadow-inset" width="56" height="56" viewBox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                        <title>Box-shadows.css</title>
+                        <path fill="#fff" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"></path>
+                        <path fill="#47c9e5" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"></path>
+                    </svg>
+                    <h1 itemprop="headline">Box-shadows Device</h1>
+                </div>
+                <nav itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="nav nav-masthead justify-content-center px-3 col-md-12 col-lg-3">
+                    <a itemprop="url" class="nav-link active" href='/box-shadows/device/' title='Box-shadows Device'>BSD</a>
+                    <a itemprop="url" class="nav-link" href='https://madeas.github.io/box-shadows' title='Box-shadows.css' target='_blank'>BS.CSS</a>
+                </nav>
+            </div>
+        </header>
 
-        <div class="container py-3">
-          <div class="row">
-
-            <div class="col-md-12">
-              <p class="lead mb-3" itemprop="description">Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures,
-                adaptive design and much more.</p>
-              <p class="text-right"><a class="github-button" href="https://github.com/madeas/device" data-show-count="true" aria-label="Star madeas/device on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/device/fork" data-icon="octicon-repo-forked"
-                  data-show-count="true" aria-label="Fork madeas/device on GitHub">Fork</a></p>
+        <main itemprop='mainContentOfPage' itemscope itemtype='http://schema.org/WebPageElement' role='main' class='bShadow-7 main'>
+            <div class='main-top default-hovered animated-text d-flex justify-content-center'>
+                <h4>Create the device of your dreams</h4>
+                <h4>It's simple</h4>
             </div>
 
-            <div class='sidebar sidebar-left col-md-12 col-lg-3 text-center' id='sidebar-left'>
-              <div class='drag-dib'>
-                <ul class='f1rem nav'>
-                  <li class='nav-item'><div class="text-left display-li mb-2">Device</div></li>
-                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
+            <div class='container py-3 bg_cont'>
+                <div class='row'>
+
+                    <div class='col-md-12'>
+                        <p class='lead mb-3' itemprop='description'>Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website. Created your device, edit the colors, background and add to it buttons. You can use the created devices to demonstrate your code, templates, pictures, adaptive design and much more.</p>
+                    	<p class="text-right"><a class="github-button" href="https://github.com/madeas/device" data-show-count="true" aria-label="Star madeas/device on GitHub">Star</a> <a class="github-button" href="https://github.com/madeas/device/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork madeas/device on GitHub">Fork</a></p>
+                    </div><!--/ col-md-12 -->
+
+                    <div class='sidebar sidebar-left col-md-12 col-lg-3 text-center' id='sidebar-left'>
+                        <div class='drag-dib'>
+                            <ul class='f1rem nav'>
+                                <li class='nav-item'>
+                                    <div class='text-left display-li mb-2'>Device</div>
+                                </li>
+                                <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='left'
+                                            data-stl='{
     "width": "225px",
     "height": "467px",
     "padding": "42px 7px",
     "border-radius": "23px"
-    }'><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg> Small Phone</span></label></li>
-                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
+    }'><span><svg
+                                                xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
+                                                <path d='M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z' /></svg>
+                                            Small Phone</span></label></li>
+                                <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='left'
+                                            data-stl='{
     "width": "267px",
     "height": "553px",
     "padding": "42px 9px",
     "border-radius": "18px"
-    }'><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z"/></svg> Big Phone</span></label></li>
-                  <li class='nav-item'><label class="text-left"><input type='radio' class='btn' name='left' data-stl='{
+    }'><span><svg
+                                                xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
+                                                <path d='M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z' /></svg>
+                                            Big Phone</span></label></li>
+                                <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='left'
+                                            data-stl='{
     "width": "450px",
     "height": "675px",
     "padding": "42px 15px",
     "border-radius": "28px"
-    }'><span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M19 24c1.104 0 2-.896 2-2v-20c0-1.104-.896-2-2-2h-14c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h14zm-14-3v-18h14v18h-14zm6.5 1.5c0-.276.224-.5.5-.5s.5.224.5.5-.224.5-.5.5-.5-.224-.5-.5z"/></svg> Tablet <strong class='w991n'>Portrait</strong></span></label></li>
-                  <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='left' data-stl='{
+    }'><span><svg
+                                                xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'>
+                                                <path d='M19 24c1.104 0 2-.896 2-2v-20c0-1.104-.896-2-2-2h-14c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h14zm-14-3v-18h14v18h-14zm6.5 1.5c0-.276.224-.5.5-.5s.5.224.5.5-.224.5-.5.5-.5-.224-.5-.5z' /></svg>
+                                            Tablet <strong class='w991n'>Portrait</strong></span></label></li>
+                                <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='left'
+                                            data-stl='{
     "width": "512px",
     "height": "352px",
     "padding": "11px 42px",
     "border-radius": "28px"
-    }'><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.042 15.638c.06.255-.277.414-.391.144-.136-.33-.356-1.734-.547-3.146-.103-.756-1.107-.663-1.104.118.003 1.215.002 2.228 0 4.027-.002 1.535.697 1.565 1.213 3.287.088.296.164.618.226.933l2.561-.895c-.893-1.747-.462-3.126-.373-4.255.122-1.543-.288-1.693-2.192-3.548.114.816.352 2.265.607 3.335zm-19.477-3.334c-1.904 1.854-2.314 2.005-2.192 3.548.089 1.128.52 2.507-.373 4.254l2.562.894c.062-.314.138-.637.226-.933.515-1.721 1.214-1.752 1.212-3.287-.002-1.8-.003-2.812 0-4.027.003-.781-1.002-.874-1.104-.118-.19 1.412-.411 2.816-.547 3.146-.113.271-.45.111-.391-.144.255-1.069.493-2.518.607-3.333zm2.435 4.696l.004-2h13.992l.004 2h-14zm-2-5.819v-6.681c0-.828.672-1.5 1.5-1.5h15c.828 0 1.5.672 1.5 1.5v6.681c-.138-.04-.282-.065-.436-.065-.41-.001-.812.166-1.102.457-.289.29-.449.686-.463 1.118v-7.691h-13.999v7.689c-.014-.432-.174-.827-.463-1.117-.29-.291-.691-.457-1.102-.457-.152 0-.296.026-.435.066z"/></svg> Landscape</span></label></li>
-                  <li class='nav-item'><label class='text-center'><input type='checkbox' class='btn_cls choiseButton brotate' name='left' data-cls='ilandscape'><span><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path d="M16.48 2.52c3.27 1.55 5.61 4.72 5.97 8.48h1.5C23.44 4.84 18.29 0 12 0l-.66.03 3.81 3.81 1.33-1.32zm-6.25-.77c-.59-.59-1.54-.59-2.12 0L1.75 8.11c-.59.59-.59 1.54 0 2.12l12.02 12.02c.59.59 1.54.59 2.12 0l6.36-6.36c.59-.59.59-1.54 0-2.12L10.23 1.75zm4.6 19.44L2.81 9.17l6.36-6.36 12.02 12.02-6.36 6.36zm-7.31.29C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32z"/></svg> <strong class='w991n'>Rotate</strong> Buttons</span></label></li>
-                </ul>
-              </div><!--/ drag-dib -->
+    }'><span><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
+                                                <path d='M22.042 15.638c.06.255-.277.414-.391.144-.136-.33-.356-1.734-.547-3.146-.103-.756-1.107-.663-1.104.118.003 1.215.002 2.228 0 4.027-.002 1.535.697 1.565 1.213 3.287.088.296.164.618.226.933l2.561-.895c-.893-1.747-.462-3.126-.373-4.255.122-1.543-.288-1.693-2.192-3.548.114.816.352 2.265.607 3.335zm-19.477-3.334c-1.904 1.854-2.314 2.005-2.192 3.548.089 1.128.52 2.507-.373 4.254l2.562.894c.062-.314.138-.637.226-.933.515-1.721 1.214-1.752 1.212-3.287-.002-1.8-.003-2.812 0-4.027.003-.781-1.002-.874-1.104-.118-.19 1.412-.411 2.816-.547 3.146-.113.271-.45.111-.391-.144.255-1.069.493-2.518.607-3.333zm2.435 4.696l.004-2h13.992l.004 2h-14zm-2-5.819v-6.681c0-.828.672-1.5 1.5-1.5h15c.828 0 1.5.672 1.5 1.5v6.681c-.138-.04-.282-.065-.436-.065-.41-.001-.812.166-1.102.457-.289.29-.449.686-.463 1.118v-7.691h-13.999v7.689c-.014-.432-.174-.827-.463-1.117-.29-.291-.691-.457-1.102-.457-.152 0-.296.026-.435.066z' /></svg>
+                                            Landscape</span></label></li>
+                                <li class='nav-item'><label class='text-center'><input type='checkbox' class='btn_cls bSd_cls choiseButton brotate' name='left' data-cls='ilandscape'><span><svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'>
+                                                <path d='M16.48 2.52c3.27 1.55 5.61 4.72 5.97 8.48h1.5C23.44 4.84 18.29 0 12 0l-.66.03 3.81 3.81 1.33-1.32zm-6.25-.77c-.59-.59-1.54-.59-2.12 0L1.75 8.11c-.59.59-.59 1.54 0 2.12l12.02 12.02c.59.59 1.54.59 2.12 0l6.36-6.36c.59-.59.59-1.54 0-2.12L10.23 1.75zm4.6 19.44L2.81 9.17l6.36-6.36 12.02 12.02-6.36 6.36zm-7.31.29C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32z' /></svg>
+                                            <strong class='w991n'>Rotate</strong> Buttons</span></label></li>
+                            </ul>
+                        </div>
+                        <!--/ drag-dib -->
 
-              <div class='drag-dib'>
-                <div id='dragbuttons' class='ui-widget-content'>
-                <ul class="f1rem nav but">
-                  <li class="nav-item"><div class="text-left display-li mb-2">Buttons</div></li>
-                  <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='top' data-cls='iSmallCircle'><span>Camera</span></label></li>
-                  <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='top' data-cls='iTopLine'><span>Dynamic</span></label></li>
-                  <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='bottom' data-cls='iSmallLine'><span>Line Button</span></label></li>
-                  <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='bottom' data-cls='iBigLine'><span>Big line Button</span></label></li>
-                  <li class="nav-item"><label><input type='checkbox' class='btn_cls choiseButton' name='bottom' data-cls='iBigCircle'><span>Circle Button</span></label></li>
-                </ul>
-                </div>
-              </div><!--/ drag-dib -->
+                        <div class='drag-dib'>
+                            <div id='dragbuttons' class='ui-widget-content'>
+                                <ul class='f1rem nav but'>
+                                    <li class='nav-item'>
+                                        <div class='text-left display-li mb-2'>Buttons</div>
+                                    </li>
+                                    <li class='nav-item'><label><input type='checkbox' class='btn_cls choiseButton' name='top' data-cls='dyna'><span>Dynamic</span></label></li>
+                                    <li class='nav-item'><label><input type='checkbox' class='btn_cls choiseButton' name='top' data-cls='cams'><span>Camera</span></label></li>
+                                    <li class='nav-item'><label><input type='checkbox' class='btn_cls choiseButton' name='bottom' data-cls='iSmallLine'><span>Line Button</span></label></li>
+                                    <li class='nav-item'><label><input type='checkbox' class='btn_cls choiseButton' name='bottom' data-cls='iBigLine'><span>Big line Button</span></label></li>
+                                    <li class='nav-item'><label><input type='checkbox' class='btn_cls choiseButton' name='bottom' data-cls='iBigCircle'><span>Circle Button</span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--/ drag-dib -->
 
-              <div class='drag-dib'>
-                <div id='dragdisplay' class='ui-widget-content'>
-                  <ul class='f1rem nav'>
-                    <li class='nav-item check'><label><input type='checkbox' id='binone' checked><span>Menu Buttons</span></label></li>
-                    <li class='nav-item'><div class="text-left display-li mb-2" style='min-width:140px'>Display</div></li>
-                    <li class='nav-item check'><label class='text-center'><input type='checkbox' class='choiseButton anistop'><span class='text-royalblue'><svg width="22" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="586.5px" height="586.5px" viewBox="0 0 586.5 586.5" style="enable-background:new 0 0 586.5 586.5;"><g><path d="M199.467,312.427c-4.8,4.48-11.52,6.72-20.16,6.72h0c-4.053,0-7.787-0.533-11.2-1.813 c-3.307-1.173-6.187-2.88-8.533-5.013c-2.347-2.133-4.16-4.8-5.44-7.787c-1.28-3.093-1.92-6.4-1.92-10.027H124.48  c0,7.68,1.493,14.4,4.48,20.267c2.987,5.867,6.933,10.773,11.947,14.613c5.013,3.947,10.773,6.827,17.387,8.853 c6.613,2.133,13.44,3.093,20.693,3.093c7.893,0,15.253-1.067,22.08-3.2c6.827-2.133,12.693-5.333,17.707-9.493 c5.013-4.16,8.853-9.28,11.733-15.36c2.773-6.08,4.267-13.013,4.267-20.8c0-4.16-0.533-8.107-1.493-11.947 c-1.067-3.84-2.667-7.467-4.8-10.88c-2.24-3.413-5.12-6.4-8.64-9.173c-3.52-2.667-7.893-4.907-12.907-6.72 c4.267-1.92,8-4.267,11.2-7.04s5.867-5.76,8-8.853c2.133-3.2,3.733-6.4,4.8-9.813c1.067-3.413,1.6-6.827,1.6-10.133 c0-7.787-1.28-14.613-3.84-20.48c-2.56-5.867-6.187-10.773-10.88-14.72s-10.24-6.933-16.853-8.96 c-6.827-2.133-14.08-3.093-21.973-3.093c-7.68,0-14.827,1.173-21.333,3.413s-12.053,5.44-16.747,9.493 c-4.693,4.053-8.32,8.853-10.987,14.4c-2.667,5.547-3.947,11.627-3.947,18.133h27.733c0-3.627,0.64-6.827,1.92-9.6 c1.28-2.88,3.093-5.333,5.333-7.253c2.24-2.027,5.013-3.627,8.107-4.693c3.093-1.067,6.507-1.707,10.133-1.707 c8.533,0,14.827,2.24,18.987,6.613c4.16,4.373,6.187,10.56,6.187,18.453c0,3.84-0.533,7.253-1.707,10.347 c-1.173,3.093-2.88,5.76-5.227,8s-5.333,3.947-8.747,5.227c-3.52,1.28-7.68,1.92-12.373,1.92h-16.427v21.867h16.427 c4.693,0,8.96,0.533,12.693,1.6s6.933,2.667,9.6,5.013c2.667,2.24,4.693,5.12,6.187,8.533c1.387,3.413,2.133,7.467,2.133,12.16 C206.933,301.227,204.48,307.84,199.467,312.427z"/><path d="M160.32,458.347C90.667,425.28,40.64,357.547,33.067,277.333h-32C11.947,408.747,121.813,512,256,512 c4.8,0,9.387-0.427,14.08-0.747l-81.28-81.387L160.32,458.347z"/> <path d="M256,0c-4.8,0-9.387,0.427-14.08,0.747l81.28,81.387l28.373-28.373c69.76,32.96,119.787,100.693,127.36,180.907h32 C500.053,103.253,390.187,0,256,0z"/> <path d="M361.92,192.747L361.92,192.747c-6.72-7.04-14.827-12.48-24.213-16.32c-9.493-3.84-19.84-5.76-31.253-5.76H256v170.667 h48.96c11.84,0,22.507-1.92,32.213-5.76c9.707-3.84,17.92-9.28,24.747-16.32c6.827-7.04,12.16-15.573,15.787-25.493 c3.733-9.92,5.547-21.12,5.547-33.493v-8.427c0-12.373-1.92-23.467-5.653-33.493C373.867,208.32,368.64,199.787,361.92,192.747z M353.6,260.373h-0.107c0,8.853-0.96,16.96-3.093,24c-2.027,7.147-5.013,13.12-9.067,18.027s-9.067,8.64-15.147,11.307 c-6.08,2.56-13.12,3.947-21.227,3.947h-19.307V194.56h20.8c15.36,0,26.987,4.907,35.093,14.613 c8,9.813,12.053,23.893,12.053,42.453V260.373z"/></g></svg> <strong class='w991n'>Rotation</strong> Device</span></label></li>
-                    <li class='nav-item check'><label><input type='checkbox' class='btn_dis_cls choiseButton dis' name='display' data-cls='display' checked><span></span></label></li>
-                    <li class='nav-item check'><label><input type='checkbox' class='choiseButton typdest' id='typdest' name='display'><span></span></label></li>
-                    <li class='nav-item check'><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
-                  </ul>
-                </div>
-              </div><!--/ drag-dib -->
-            </div><!--/ sidebar-left -->
+                        <div class='drag-dib'>
+                            <div id='dragdisplay' class='ui-widget-content'>
+                                <ul class='f1rem nav'>
+                                    <li class='nav-item check'><label><input type='checkbox' id='binone' checked><span>Menu Buttons</span></label></li>
+                                    <li class='nav-item'>
+                                        <div class='text-left display-li mb-2' style='min-width:140px'>Display</div>
+                                    </li>
+                                    <li class='nav-item check'><label class='text-center'><input type='checkbox' class='choiseButton anistop'><span class='text-royalblue'><svg width="22" height="22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 586.5 586.5" style="enable-background:new 0 0 586.5 586.5;">
+                                                    <g>
+                                                        <path d="M199.467,312.427c-4.8,4.48-11.52,6.72-20.16,6.72h0c-4.053,0-7.787-0.533-11.2-1.813 c-3.307-1.173-6.187-2.88-8.533-5.013c-2.347-2.133-4.16-4.8-5.44-7.787c-1.28-3.093-1.92-6.4-1.92-10.027H124.48  c0,7.68,1.493,14.4,4.48,20.267c2.987,5.867,6.933,10.773,11.947,14.613c5.013,3.947,10.773,6.827,17.387,8.853 c6.613,2.133,13.44,3.093,20.693,3.093c7.893,0,15.253-1.067,22.08-3.2c6.827-2.133,12.693-5.333,17.707-9.493 c5.013-4.16,8.853-9.28,11.733-15.36c2.773-6.08,4.267-13.013,4.267-20.8c0-4.16-0.533-8.107-1.493-11.947 c-1.067-3.84-2.667-7.467-4.8-10.88c-2.24-3.413-5.12-6.4-8.64-9.173c-3.52-2.667-7.893-4.907-12.907-6.72 c4.267-1.92,8-4.267,11.2-7.04s5.867-5.76,8-8.853c2.133-3.2,3.733-6.4,4.8-9.813c1.067-3.413,1.6-6.827,1.6-10.133 c0-7.787-1.28-14.613-3.84-20.48c-2.56-5.867-6.187-10.773-10.88-14.72s-10.24-6.933-16.853-8.96 c-6.827-2.133-14.08-3.093-21.973-3.093c-7.68,0-14.827,1.173-21.333,3.413s-12.053,5.44-16.747,9.493 c-4.693,4.053-8.32,8.853-10.987,14.4c-2.667,5.547-3.947,11.627-3.947,18.133h27.733c0-3.627,0.64-6.827,1.92-9.6 c1.28-2.88,3.093-5.333,5.333-7.253c2.24-2.027,5.013-3.627,8.107-4.693c3.093-1.067,6.507-1.707,10.133-1.707 c8.533,0,14.827,2.24,18.987,6.613c4.16,4.373,6.187,10.56,6.187,18.453c0,3.84-0.533,7.253-1.707,10.347 c-1.173,3.093-2.88,5.76-5.227,8s-5.333,3.947-8.747,5.227c-3.52,1.28-7.68,1.92-12.373,1.92h-16.427v21.867h16.427 c4.693,0,8.96,0.533,12.693,1.6s6.933,2.667,9.6,5.013c2.667,2.24,4.693,5.12,6.187,8.533c1.387,3.413,2.133,7.467,2.133,12.16 C206.933,301.227,204.48,307.84,199.467,312.427z"></path>
+                                                        <path d="M160.32,458.347C90.667,425.28,40.64,357.547,33.067,277.333h-32C11.947,408.747,121.813,512,256,512 c4.8,0,9.387-0.427,14.08-0.747l-81.28-81.387L160.32,458.347z"></path>
+                                                        <path d="M256,0c-4.8,0-9.387,0.427-14.08,0.747l81.28,81.387l28.373-28.373c69.76,32.96,119.787,100.693,127.36,180.907h32 C500.053,103.253,390.187,0,256,0z"></path>
+                                                        <path d="M361.92,192.747L361.92,192.747c-6.72-7.04-14.827-12.48-24.213-16.32c-9.493-3.84-19.84-5.76-31.253-5.76H256v170.667 h48.96c11.84,0,22.507-1.92,32.213-5.76c9.707-3.84,17.92-9.28,24.747-16.32c6.827-7.04,12.16-15.573,15.787-25.493 c3.733-9.92,5.547-21.12,5.547-33.493v-8.427c0-12.373-1.92-23.467-5.653-33.493C373.867,208.32,368.64,199.787,361.92,192.747z M353.6,260.373h-0.107c0,8.853-0.96,16.96-3.093,24c-2.027,7.147-5.013,13.12-9.067,18.027s-9.067,8.64-15.147,11.307 c-6.08,2.56-13.12,3.947-21.227,3.947h-19.307V194.56h20.8c15.36,0,26.987,4.907,35.093,14.613 c8,9.813,12.053,23.893,12.053,42.453V260.373z"></path>
+                                                    </g>
+                                                </svg> <strong class='w991n'>Rotation</strong> Device</span></label></li>
+                                    <li class='nav-item check'><label><input type='checkbox' class='dis_cls choiseButton dis' name='display' data-cls='display' checked><span></span></label></li>
+                                    <li class='nav-item check'><label><input type='checkbox' class='choiseButton typdest' id='typdest' name='display'><span></span></label></li>
+                                    <li class='nav-item check'><label><input type='checkbox' class='choiseButton typstop' id='typstop' name='display'><span></span></label></li>
+                                </ul>
+                            </div>
+                        </div><!--/ drag-dib -->
+                    </div><!--/ sidebar-left -->
 
-            <div class="col-md-12 col-lg-6 pb-5 text-center d-flex flex-column justify-content-start align-items-center">
-              <div class="mb-5 gen_code">
-                <div class="modal fade bd-example-modal-lg" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header border-bottom-0 d-flex flex-column">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-                        <h3 class="modal-title" id="ModalCenterTitle">Device code</h3>
-                        <p class='f1rem mb-0'>Copy the code and paste it on the page where you want to use this project.</p>
-                        <p class='f1rem'>The form will be displayed in the place where you place the code.</p>
-                      </div>
-                      <div class='modal-body'>
-                        <textarea class='f1rem custom-textarea' id='form_code'></textarea>
-                        <script>
-                          form_code.innerHTML += '<div id="bSd">' + '\n' + '<div class="display">' + '</div>' + '\n' + '</div>' + '\n' + '<style>' + '\n' + '*{' + '\n' + 'box-sizing: border-box;' + '\n' + '}' + '\n' + '#bSd {' + '\n' + 'display: -webkit-box;' + '\n' + 'display: -ms-flexbox;' + '\n' + 'display: flex;' + '\n' + 'background-color: #fff;' + '\n' + 'border-radius: 8px;' + '\n' + 'padding: 25px 7px;' + '\n' + 'position: relative;' + '\n' + 'width: 225px;' + '\n' + 'height: 250px;' + '\n' + '}' + '\n' + '.display {' + '\n' + 'display: -webkit-box;' + '\n' + 'display: -ms-flexbox;' + '\n' + 'display: flex;' + '\n' + '-webkit-box-pack: center;' + '\n' + '-ms-flex-pack: center;' + '\n' + 'justify-content:center;' + '\n' + '-webkit-box-align: center;' + '\n' + '-ms-flex-align: center;' + '\n' + 'align-items: center;' + '\n' + 'width: 100%;' + '\n' + 'background: linear-gradient(45deg, #e5ebf2, #f2f6fa);' + '\n' + 'border-radius: 8px;' + '\n' + 'box-shadow:inset 1px 1px 1px rgba(0,0,0,0.03), inset -1px -1px 1px rgba(0,0,0,0.03);' + '\n' + 'min-height: 150px;' + '\n' + 'overflow: hidden;' + '\n' + '}' + '\n' + '.display * {' + '\n' + 'display: block;' + '\n' + 'width: 100%;' + '\n' + '}' + '\n' + '</style>';
+                    <div class='col-md-12 col-lg-6 py-5 text-center d-flex flex-column justify-content-stretch align-items-center'>
 
-                        </script>
-                      </div>
-                      <div class="modal-footer border-top-0 mb-2 d-flex justify-content-center">
-                        <button type="button" class="btn gen copy_code mx-2">Copy code</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <label class='bsdisplay pt-5'>
+                            <input type='checkbox' id='device_play' />
+                            <div class='bSd' id='bSm'>
 
-              <div class='pb-5 w-100 text-center ui-widget-content ui-draggable ui-draggable-handle' id='dragcreate'>
-                <h3>Create your own style</h3>
-                <p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
-                <label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label>
-              </div>
+                                <div class='front' id='front'>
+                                    <div class='noice'></div>
 
-              <label class='bsdisplay pt-3'>
-		<input type='checkbox' id='device_play' />
-		<div id="bSm" class='bSd'>
-			<div class='border_front'></div>
-			<div class='btn_top'></div>
-			<div class="display" id="display">
-				 <span id="typed"></span>
-			</div>
-			<div class='btn_bottom'>
-				<svg id='menu_button' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><g><rect x="0" y="6" width="38" height="32"></rect><polygon points="6 0, 50 0, 50 29, 44 29, 44 4, 6 4"></polygon></g></svg>
-				<svg id='back_button' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><g><path d="M 11 0 C 10.488281 0 9.984375 0.203125 9.59375 0.59375 L 0.59375 9.59375 C -0.1875 10.375 -0.1875 11.625 0.59375 12.40625 L 9.59375 21.40625 C 9.984375 21.796875 10.488281 22 11 22 C 11.511719 22 12.015625 21.796875 12.40625 21.40625 C 13.1875 20.625 13.1875 19.375 12.40625 18.59375 L 6.84375 13 L 32 13 C 39.722656 13 46 19.28125 46 27 C 46 34.722656 39.722656 41 32 41 L 16 41 L 16 45 L 33 45 L 33 44.9375 C 42.460938 44.414063 50 36.589844 50 27 C 50 17.601563 42.757813 9.886719 33.5625 9.09375 C 33.382813 9.039063 33.195313 9 33 9 L 6.84375 9 L 12.40625 3.40625 C 13.1875 2.625 13.1875 1.375 12.40625 0.59375 C 12.015625 0.203125 11.511719"></path></g></svg>
-			</div>
-			<div class='back' id='back'>
-				<div class='back_cover'>
-					<div class='back_pattern'></div>
-				</div>
-				<div class='back_cam'></div>
-				<div class='back_text'>MADEAS</div>
-				<div class='back_bottom_text'>create your device</div>
-			</div>
-			</div>
-		</label>
+                                    <div class='display' id='display'>
+                                        <span id='typed'></span>
+                                    </div>
 
-              <div class='d-flex flex-row justify-content-end w-100'>
+                                    <div class='front_bord'></div>
+                                    <div class='front_dyna'></div>
+                                    <div class='front_cams'></div>
+                                    <div class='front_bBigbtn'></div>
 
-                <div id='dragblock' class='ui-widget-content sidebar devbutton'>
-                  <h2 class='px-2'>Display</h2>
-                  <ul class='f1rem nav flex-column justify-content-center'>
-                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
+                                    <div class='btn_bottom'>
+                                        <svg id='menu_button' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'>
+                                            <g>
+                                                <rect x="0" y="6" width="38" height="32"></rect>
+                                                <polygon points="6 0, 50 0, 50 29, 44 29, 44 4, 6 4"></polygon>
+                                            </g>
+                                        </svg>
+                                        <svg id='back_button' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'>
+                                            <g>
+                                                <path d="M 11 0 C 10.488281 0 9.984375 0.203125 9.59375 0.59375 L 0.59375 9.59375 C -0.1875 10.375 -0.1875 11.625 0.59375 12.40625 L 9.59375 21.40625 C 9.984375 21.796875 10.488281 22 11 22 C 11.511719 22 12.015625 21.796875 12.40625 21.40625 C 13.1875 20.625 13.1875 19.375 12.40625 18.59375 L 6.84375 13 L 32 13 C 39.722656 13 46 19.28125 46 27 C 46 34.722656 39.722656 41 32 41 L 16 41 L 16 45 L 33 45 L 33 44.9375 C 42.460938 44.414063 50 36.589844 50 27 C 50 17.601563 42.757813 9.886719 33.5625 9.09375 C 33.382813 9.039063 33.195313 9 33 9 L 6.84375 9 L 12.40625 3.40625 C 13.1875 2.625 13.1875 1.375 12.40625 0.59375 C 12.015625 0.203125 11.511719"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div><!--/ front -->
+
+                                <div class='back' id='back'>
+                                    <div class='noice'></div>
+                                    <div class='back_bord'></div>
+                                    <div class='back_cover'></div>
+                                    <div class='back_cam'></div>
+                                    <div class='back_text'>MADEAS</div>
+                                    <div class='back_bottom_text'>create your device</div>
+                                </div><!--/ back -->
+
+                            </div><!--/ bSd -->
+                        </label>
+
+                        <div class='d-flex flex-row justify-content-end w-100'>
+                            <div id='drag_back_set' class='ui-widget-content sidebar'>
+                                <h2 class='px-2 text-right'>Camera</h2>
+                                <ul class='f1rem nav flex-column justify-content-center but'>
+                                    <li class='nav-item'><label><input type='checkbox' class='back_cls choiseButton' data-cls='cam_rotate'><span>Rotate</span></label></li>
+                                    <li class='nav-item'><label><input type='checkbox' class='back_cls choiseButton' data-cls='tablet'><span>Position</span></label></li>
+                                </ul>
+                            </div>
+
+                            <div id='dragblock' class='ui-widget-content sidebar devbutton'>
+                                <h2 class='px-2'>Display</h2>
+                                <ul class='f1rem nav flex-column justify-content-center'>
+                                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block'
+                                                data-stl='{
     "display": "block"
 	}'><span>block</span></label></li>
-                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block' data-stl='{
+                                    <li class="nav-item"><label class='text-left'><input type='radio' class='btn' name='block'
+                                                data-stl='{
     "display": "-webkit-box",
     "display": "-ms-flexbox",
     "display": "flex"
 	}'><span>flex</span></label></li>
-                  </ul>
-                </div>
+                                </ul>
+                            </div>
 
-                <div id='dragposition' class='ui-widget-content sidebar devbutton'>
-                  <h2 class='px-2'>Position</h2>
-                  <ul class='f1rem nav flex-column justify-content-center'>
-                    <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
+                            <div id='dragposition' class='ui-widget-content sidebar devbutton'>
+                                <h2 class='px-2'>Position</h2>
+                                <ul class='f1rem nav flex-column justify-content-center'>
+                                    <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='pos'
+                                                data-stl='{
     "position": "absolute"
 	}'><span>absolute</span></label></li>
-                    <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='pos' data-stl='{
+                                    <li class='nav-item'><label class='text-left'><input type='radio' class='btn' name='pos'
+                                                data-stl='{
     "position": "relative"
 	}'><span>relative</span></label></li>
-                  </ul>
-                </div>
+                                </ul>
+                            </div>
+                        </div><!--/ flex-row -->
 
-                <div id='drag_back_set' class='ui-widget-content sidebar'>
-                  <h2 class='px-2 text-right'>Camera</h2>
-                  <ul class='f1rem nav flex-column justify-content-center but'>
-                    <li class='nav-item'><label><input type='checkbox' class='btn_back_cls choiseButton' data-cls='cam_rotate'><span>Rotate</span></label></li>
-                    <li class='nav-item'><label><input type='checkbox' class='btn_back_cls choiseButton' data-cls='tablet'><span>Position</span></label></li>
-                  </ul>
-                </div>
+                        <div class='pt-5 w-100 text-center ui-widget-content ui-draggable ui-draggable-handle devbutton' id='dragcreate'>
+                            <h3>Create your own style</h3>
+                            <p class='f1rem'>Enter any attribute and its contents. <br /> You can enter several attributes via a semicolon.</p>
+                            <label class='lab_adstl'><input type='text' class='btn adstl' placeholder='width: 300px; height: 500px; background-color: lightblue;' value='' name='edit_style' data-stl='' id='adstl'><i>Editing this field will <strong class="text-danger">reset</strong> all your previously created settings!</i></label>
+                        </div>
+                    </div><!--/ col-md-12 -->
 
-              </div><!--/ flex-row -->
-
-            </div><!--/ col-md-12 -->
-
-            <div class='sidebar sidebar-right col-md-12 col-lg-3' id='sidebar-right'>
-              <h2 class='text-right px-2'>Background</h2>
-              <ul class='f1rem nav justify-content-end'>
-                <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
+                    <div class='sidebar sidebar-right col-md-12 col-lg-3' id='sidebar-right'>
+                        <h2 class='text-right px-2'>Background</h2>
+                        <ul class='f1rem nav justify-content-end'>
+                            <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background": "linear-gradient(-45deg, rgb(0, 0, 0), rgb(58, 58, 61))"
-				}'><span><strong class='w991n'>Background</strong> Black</span></label></li>
-                <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
+				}'><span><strong
+                                            class='w991n'>Background</strong> Black</span></label></li>
+                            <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background": "linear-gradient(-35deg, rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%)"
-				}'><span><strong class='w991n'>Background</strong> White</span></label></li>
-                <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
+				}'><span><strong
+                                            class='w991n'>Background</strong> White</span></label></li>
+                            <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background": "linear-gradient(to top, rgb(214, 171, 165), rgb(254, 217, 211))"
-				}'><span><strong class='w991n'>Gradient</strong> Pink</span></label></li>
-                <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
+				}'><span><strong
+                                            class='w991n'>Gradient</strong> Pink</span></label></li>
+                            <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background": "linear-gradient(45deg, rgb(172, 172, 174), rgb(235, 235, 235))"
-				}'><span><strong class='w991n'>Gradient</strong> Silver</span></label></li>
-                <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
+				}'><span><strong
+                                            class='w991n'>Gradient</strong> Silver</span></label></li>
+                            <li class='nav-item'><label><input type='radio' class='btn' name='bg' data-stl='{
 				"background": "linear-gradient(35deg, rgb(196, 69, 43), rgb(250, 182, 35))"
-				}'><span><strong class='w991n'>Gradient</strong> Peach</span></label></li>
-                <li class='nav-item'><label class="bold text-danger"><input type='radio' class='btn' name='bg' data-stl='{
+				}'><span><strong
+                                            class='w991n'>Gradient</strong> Peach</span></label></li>
+                            <li class='nav-item'><label class="bold text-danger"><input type='radio' class='btn' name='bg'
+                                        data-stl='{
 				"background": "transparent",
 				"color": "inherit"
 				}'><span>Remove</span></label></li>
-                <li class='nav-item lab_adstl w-auto'><i>If the result does not change the color in the 'Get code', try again to change it.</i><input type="color" id="bg_choose" class='btn' name='bg' value="#fe9216"><label title="Click and 'Ctrl + C'" class="choose"><span id="choose">← Choose</span></label></li>
-              </ul>
-              <div id='dragshadow' class='ui-widget-content'>
-                <h2 class='text-right px-2'>Shadows</h2>
-                <ul class='f1rem nav text-left justify-content-end'>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+                            <li class='nav-item lab_adstl w-auto'><i>If the result does not change the color in the 'Get code', try again to change it.</i><input type='color' id='bg_choose' class='btn' name='bg' value='#fe9216'><label title="Click and 'Ctrl + C'" class='choose'><span id='choose'>← Choose</span></label></li>
+                        </ul>
+                        <div id='dragshadow' class='ui-widget-content'>
+                            <h2 class='text-right px-2'>Shadows</h2>
+                            <ul class='f1rem nav text-left justify-content-end'>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "rgba(255, 255, 255, 0.15) 0px 7px 1px inset, rgba(255, 255, 255, 0.15) 0px -7px 1px inset, rgba(255, 255, 255, 0.25) -140px 0px 3px inset, rgba(255, 255, 255, 0.25) -7px 0px 5px inset, rgba(255, 255, 255, 0.85) -2px 0px 6px 1px inset, rgba(255, 255, 255, 0.15) 3px -10px 4px inset, rgba(0, 21, 64, 0.05) 0px 10px 20px"
-				}'><span>Blick Shadow</span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Blick
+                                            Shadow</span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "rgba(145, 161, 181, 0.5) 0px -2px 3px inset, rgba(253, 255, 255, 0.9) 2px 2px 4px inset"
-				}'><span>Sight Shadow</span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Sight
+                                            Shadow</span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "rgba(145, 160, 180, 0.15) 3px -3px 5px 1px inset, rgba(255, 255, 255, 0.9) -3px 3px 4px 1px inset"
-				}'><span>Angle Shadow</span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Angle
+                                            Shadow</span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "inset 0 4px 7px 1px #fff, inset 0 -5px 20px rgba(173, 186, 204, .25), 0 2px 6px rgba(0, 21, 64, .14), 0 10px 20px rgba(0, 21, 64, .05)"
-				}'><span>Classic Shadow</span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Classic
+                                            Shadow</span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "rgba(145, 161, 181, 0.5) 0px -1px 13px inset, rgba(255, 255, 255, 0.9) 0px 3px 2px inset, rgba(255, 255, 255, 0.9) 3px 0px 3px inset, rgba(255, 255, 255, 0.9) -3px 0px 3px inset"
-				}'><span>Inside Light</span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Inside
+                                            Light</span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "rgba(145, 160, 180, 0.45) 0px -3px 25px inset, rgba(255, 255, 255, 0.9) -1px 3px 4px 1px inset"
-				}'><span>Deep Shadow</span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Deep
+                                            Shadow</span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "inset 6px -6px 15px rgba(145, 160, 180, .45), -30px 30px 40px rgba(118, 146, 180, .18)"
-				}'><span>Big Back <strong class='w991n'>Shadow</strong></span></label></li>
-                  <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Big
+                                            Back <strong class='w991n'>Shadow</strong></span></label></li>
+                                <li class='nav-item'><label><input type='radio' class='btn' name='right' data-stl='{
 				"box-shadow": "rgba(145, 160, 180, 0.45) -6px -6px 15px inset, rgba(145, 160, 180, 0.7) 40px 0px 80px -40px"
-				}'><span>Right Back <strong class='w991n'>Shadow</strong></span></label></li>
-                  <li class='nav-item'><label class="bold text-danger"><input type='radio' class='btn' name='right' data-stl='{
+				}'><span>Right
+                                            Back <strong class='w991n'>Shadow</strong></span></label></li>
+                                <li class='nav-item'><label class="bold text-danger"><input type='radio' class='btn'
+                                            name='right' data-stl='{
 				"box-shadow": "none"
 				}'><span>Remove</span></label></li>
-                  <li class='mt-4 nav-item d-none'><label class="text-right"><button type="button" class="disabled">← Choose</button></label>
-                    <div style="position:absolute;left:-50px;top:40%;pointer-events: none;"><img width="150" src="//madeas.ru/images/soon.png" alt=""></div>
-                  </li>
-                </ul>
-              </div><!--/ dragshadow -->
+                            </ul>
+                        </div><!--/ dragshadow -->
 
-            </div><!--/ sidebar-right -->
+                    </div><!--/ sidebar-right -->
 
-            <div class='col-md-12 py-3 f1rem back_style'>
-              <p class='px-2'><button class="get_collapse" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add sticker</button><span class='sticker'>Click to add a sticker to the back cover</span></p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body d-flex flex-column">
-                  <h5>Background Image: url(<input type='text' id='bgImage' placeholder='https://images.png' value='https://madeas.github.io/box-shadows/device/img/back_image_two.png' class='adstl w-auto'>);</h5>
+                    <div class='col-md-12'>
+                        <div class='py-3 f1rem back_style'>
+                            <p class='px-2 text-left'><button class="get_collapse" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Add sticker</button><span class='sticker'>Click to add a sticker to the back cover</span></p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body d-flex flex-column">
+                                    <h5>Background Image: url(<input type='text' id='bgImage' placeholder='https://images.png' value='https://madeas.github.io/box-shadows/device/img/back_image_two.png' class='adstl w-auto'>);</h5>
 
-                  <div class='d-flex dfrowcol'>
-                    <div class='mr-2'>
-                      <h5>Background Repeat:</h5>
-                      <ul class='list-inline bradio'>
-                        <li><input type='radio' name='repeat' id='norep' checked><label for='norep'>no-repeat</label></li>
-                        <li><input type='radio' name='repeat' id='repXY'><label for='repXY'>repeat</label> <svg width="19" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64"><g><path fill="#1D1D1B" d="m63.875,31.203c-0.102-0.246-0.248-0.467-0.435-0.652l-6.837-6.838c-0.783-0.783-2.051-0.783-2.834,0-0.781,0.781-0.781,2.05 0,2.832l3.42,3.42-23.16-.001 .002-23.155 3.568,3.57c0.393,0.392 0.904,0.588 1.418,0.588 0.512,0 1.025-0.196 1.416-0.588 0.783-0.781 0.783-2.051 0-2.834l-6.988-6.99c-0.186-0.186-0.406-0.332-0.652-0.434-0.49-0.203-1.041-0.203-1.531,0-0.244,0.101-0.463,0.246-0.646,0.429 0,0-0.002,0.002-0.004,0.003l-6.844,6.84c-0.781,0.783-0.781,2.051 0,2.834 0.393,0.391 0.904,0.587 1.418,0.587 0.512,0 1.025-0.196 1.416-0.587l3.422-3.42-.002,23.157-23.15-.001 3.417-3.418c0.781-0.782 0.781-2.051 0-2.832-0.783-0.783-2.051-0.783-2.834,0l-6.838,6.84c-0.393,0.391-0.588,0.903-0.588,1.416s0.195,1.025 0.588,1.417l6.988,6.989c0.392,0.393 0.904,0.588 1.417,0.588s1.025-0.195 1.417-0.588c0.782-0.783 0.782-2.051 0-2.833l-3.571-3.571 23.153,.001-.001,23.153-3.418-3.417c-0.783-0.78-2.051-0.782-2.834,0.001-0.781,0.783-0.781,2.052 0,2.834l6.844,6.839c0.391,0.392 0.904,0.587 1.416,0.587 0.513,0 1.025-0.195 1.416-0.587l6.99-6.991c0.783-0.783 0.783-2.053 0-2.834-0.783-0.783-2.051-0.783-2.834,0l-3.572,3.574 .002-23.159 23.16,.001-3.57,3.569c-0.781,0.782-0.781,2.05 0,2.833 0.393,0.393 0.904,0.588 1.418,0.588 0.512,0 1.025-0.195 1.416-0.588l6.989-6.989c0.004-0.005 0.006-0.012 0.012-0.017 0.177-0.182 0.321-0.396 0.421-0.633 0.102-0.246 0.154-0.506 0.154-0.768-0.001-0.259-0.053-0.52-0.155-0.765z"/></g></svg></li>
-                        <li><input type='radio' name='repeat' id='repX'><label for='repX'>repeat-x</label> <svg width='16' height='16' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" version="1.1" style='transform: rotate(90deg)'><g><path style=" " d="M 7.5 0.0859375 L 4.03125 3.554688 L 4.738281 4.261719 L 7 2 L 7 13.023438 L 4.738281 10.761719 L 4.03125 11.46875 L 7.5 14.9375 L 10.96875 11.46875 L 10.261719 10.761719 L 8 13.023438 L 8 2 L 10.261719 4.261719 L 10.96875 3.554688 Z "></path></g></svg></li>
-                        <li><input type='radio' name='repeat' id='repY'><label for='repY'>repeat-y</label> <svg width='16' height='16' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" version="1.1"><g><path style=" " d="M 7.5 0.0859375 L 4.03125 3.554688 L 4.738281 4.261719 L 7 2 L 7 13.023438 L 4.738281 10.761719 L 4.03125 11.46875 L 7.5 14.9375 L 10.96875 11.46875 L 10.261719 10.761719 L 8 13.023438 L 8 2 L 10.261719 4.261719 L 10.96875 3.554688 Z "></path></g></svg></li>
-                      </ul>
+                                    <div class='d-flex dfrowcol'>
+                                        <div class='mr-2'>
+                                            <h5>Background Repeat:</h5>
+                                            <ul class='list-inline bradio'>
+                                                <li><input type='radio' name='repeat' id='norep' checked><label for='norep'>no-repeat</label></li>
+                                                <li><input type='radio' name='repeat' id='repXY'><label for='repXY'>repeat</label>
+                                                    <svg width="19" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 64 64">
+                                                        <g>
+                                                            <path fill="#1D1D1B" d="m63.875,31.203c-0.102-0.246-0.248-0.467-0.435-0.652l-6.837-6.838c-0.783-0.783-2.051-0.783-2.834,0-0.781,0.781-0.781,2.05 0,2.832l3.42,3.42-23.16-.001 .002-23.155 3.568,3.57c0.393,0.392 0.904,0.588 1.418,0.588 0.512,0 1.025-0.196 1.416-0.588 0.783-0.781 0.783-2.051 0-2.834l-6.988-6.99c-0.186-0.186-0.406-0.332-0.652-0.434-0.49-0.203-1.041-0.203-1.531,0-0.244,0.101-0.463,0.246-0.646,0.429 0,0-0.002,0.002-0.004,0.003l-6.844,6.84c-0.781,0.783-0.781,2.051 0,2.834 0.393,0.391 0.904,0.587 1.418,0.587 0.512,0 1.025-0.196 1.416-0.587l3.422-3.42-.002,23.157-23.15-.001 3.417-3.418c0.781-0.782 0.781-2.051 0-2.832-0.783-0.783-2.051-0.783-2.834,0l-6.838,6.84c-0.393,0.391-0.588,0.903-0.588,1.416s0.195,1.025 0.588,1.417l6.988,6.989c0.392,0.393 0.904,0.588 1.417,0.588s1.025-0.195 1.417-0.588c0.782-0.783 0.782-2.051 0-2.833l-3.571-3.571 23.153,.001-.001,23.153-3.418-3.417c-0.783-0.78-2.051-0.782-2.834,0.001-0.781,0.783-0.781,2.052 0,2.834l6.844,6.839c0.391,0.392 0.904,0.587 1.416,0.587 0.513,0 1.025-0.195 1.416-0.587l6.99-6.991c0.783-0.783 0.783-2.053 0-2.834-0.783-0.783-2.051-0.783-2.834,0l-3.572,3.574 .002-23.159 23.16,.001-3.57,3.569c-0.781,0.782-0.781,2.05 0,2.833 0.393,0.393 0.904,0.588 1.418,0.588 0.512,0 1.025-0.195 1.416-0.588l6.989-6.989c0.004-0.005 0.006-0.012 0.012-0.017 0.177-0.182 0.321-0.396 0.421-0.633 0.102-0.246 0.154-0.506 0.154-0.768-0.001-0.259-0.053-0.52-0.155-0.765z" />
+                                                        </g>
+                                                    </svg></li>
+                                                <li><input type='radio' name='repeat' id='repX'><label for='repX'>repeat-x</label>
+                                                    <svg width='16' height='16' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16" version="1.1" style='transform: rotate(90deg)'>
+                                                        <g>
+                                                            <path d="M 7.5 0.0859375 L 4.03125 3.554688 L 4.738281 4.261719 L 7 2 L 7 13.023438 L 4.738281 10.761719 L 4.03125 11.46875 L 7.5 14.9375 L 10.96875 11.46875 L 10.261719 10.761719 L 8 13.023438 L 8 2 L 10.261719 4.261719 L 10.96875 3.554688 Z "></path>
+                                                        </g>
+                                                    </svg></li>
+                                                <li><input type='radio' name='repeat' id='repY'><label for='repY'>repeat-y</label>
+                                                    <svg width='16' height='16' xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16 16"
+                                                        version="1.1">
+                                                        <g>
+                                                            <path d="M 7.5 0.0859375 L 4.03125 3.554688 L 4.738281 4.261719 L 7 2 L 7 13.023438 L 4.738281 10.761719 L 4.03125 11.46875 L 7.5 14.9375 L 10.96875 11.46875 L 10.261719 10.761719 L 8 13.023438 L 8 2 L 10.261719 4.261719 L 10.96875 3.554688 Z "></path>
+                                                        </g>
+                                                    </svg></li>
+                                            </ul>
+                                        </div>
+                                        <div class='mx-2'>
+                                            <h5>Background Size:</h5>
+                                            <ul class='list-inline bradio'>
+                                                <li><label id='bnoradio'><input type='number' id='sizeIn' value='150' name='size' class='adstl bsize'> px</label></li>
+                                                <li class='bsckeck'><input type='checkbox' id='sizeOne' name='size'><label for='sizeOne'>cover</label></li>
+                                                <li class='bsckeck'><input type='checkbox' id='sizeTwo' name='size'><label for='sizeTwo'>contain</label></li>
+                                            </ul>
+                                        </div>
+                                        <div class='ml-2'>
+                                            <h5>Background Position:</h5>
+                                            <ul class='list-inline'>
+                                                <li>Left: <label><input id='posX' type='number' min='0' max='100' value='50' class='adstl bsize'> %</label></li>
+                                                <li>Top: <label><input id='posY' type='number' min='0' max='100' value='60' class='adstl bsize'> %</label></li>
+                                            </ul>
+                                        </div>
+                                    </div><!--/ d-flex -->
+
+                                </div><!--/ card -->
+                            </div><!--/ collapse -->
+                        </div><!--/ back_style -->
                     </div>
-                    <div class='mx-2'>
-                      <h5>Background Size:</h5>
-                      <ul class='list-inline bradio'>
-                        <li><label id='bnoradio'><input type='number' id='sizeIn' value='150' name='size' class='adstl bsize'> px</label></li>
-                        <li class='bsckeck'><input type='checkbox' id='sizeOne' name='size'><label for='sizeOne'>cover</label></li>
-                        <li class='bsckeck'><input type='checkbox' id='sizeTwo' name='size'><label for='sizeTwo'>contain</label></li>
-                      </ul>
+
+
+                    <div class="col-md-12 pt-2 text-center">
+                        <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
+                        <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1 devbutton" data-toggle="modal" data-target="#ModalCenter">Get code</button>
+                        <span><button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1 opendev" title='Add Developer Buttons'>I'm a Developer</button></span>
                     </div>
-                    <div class='ml-2'>
-                      <h5>Background Position:</h5>
-                      <ul class='list-inline'>
-                        <li>Left: <label><input id='posX' type='number' min='0' max='100' value='50' class='adstl bsize'> %</label></li>
-                        <li>Top: <label><input id='posY' type='number' min='0' max='100' value='60' class='adstl bsize'> %</label></li>
-                      </ul>
+                </div>
+                <!--/ row -->
+                <div class="mt-4 row">
+                    <div class='col-sm-8'>
+                        <p class='text-left f1rem text-muted'>Have a question or idea? Contact Us <a href="https://github.com/madeas/device/issues" target="_blank" title="Add a issue to GitHub">
+                                <svg id="add_issue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 32 32" version="1.1">
+                                    <g>
+                                        <path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z "></path>
+                                    </g>
+                                </svg>
+                            </a></p>
                     </div>
-                  </div><!--/ d-flex -->
+                    <div class='col-sm-4'>
+                        <p class='f1rem text-center'>Docs: <a href='' title='vkontakte article' itemprop='url' target='_blank'>Ru</a> | <a href='https://medium.com/@andrejsharapov/box-shadows-device-7c1239562c5c' title='medium article' itemprop='url' target='_blank'>En</a></p>
+                    </div>
+                </div><!--/ row -->
+            </div><!--/ container -->
+        </main>
 
-                </div><!--/ card -->
-              </div><!--/ collapse -->
-            </div><!--/ back_style -->
-
-            <div class="col-md-12 pt-2 text-center">
-              <button type="button" id='reset' class="gen bShadow-9 bShadow-2h mx-3 my-1">Reset styles</button>
-              <button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1 devbutton" data-toggle="modal" data-target="#ModalCenter">Get code</button>
-              <span><button type="button" class="gen bShadow-9 bShadow-2h mx-3 my-1 opendev" title='Add Developer Buttons'>I'm a Developer</button></span>
+        <footer itemscope itemtype='http://schema.org/WPFooter' id='footer' role='contentinfo' class='container pt-5 px-5 pb-2'>
+            <div class='row'>
+                <div class='col-sm-12 col-md-6'>
+                    <p class='copy f1rem'>&copy; <span itemprop="copyrightYear">2018</span> Box-shadows Device</p>
+                </div>
+                <div class='col-sm-12 col-md-6'>
+                    <p class='f1rem text-right'>Created by <a class='text-dark bg-white py-1 px-2 bShadow-7' href='https://twitter.com/andrejsharapov' itemprop='url' title='twitter/@andrejsharapov' style='border-radius:.3rem'><span itemprop='name'>@andrejsharapov</span></a></p>
+                </div>
             </div>
-          </div><!--/ row -->
+        </footer>
 
-          <div class="mt-4 row">
-            <div class='col-sm-8'>
-              <p class='text-left f1rem text-muted'>Have a question or idea? Contact Us <a href="https://github.com/madeas/box-shadows.css/issues" target="_blank" title="Add a issue to GitHub">
-		<svg id="add_issue" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1">
-			<g>
-				<path d="M 16 3 C 8.832031 3 3 8.832031 3 16 C 3 23.167969 8.832031 29 16 29 C 23.167969 29 29 23.167969 29 16 C 29 8.832031 23.167969 3 16 3 Z M 16 5 C 22.085938 5 27 9.914063 27 16 C 27 22.085938 22.085938 27 16 27 C 9.914063 27 5 22.085938 5 16 C 5 9.914063 9.914063 5 16 5 Z M 15 10 L 15 15 L 10 15 L 10 17 L 15 17 L 15 22 L 17 22 L 17 17 L 22 17 L 22 15 L 17 15 L 17 10 Z "></path>
-			</g>
-		</svg>
-		</a></p>
+        <div class="mb-5 gen_code">
+            <div class="modal fade bd-example-modal-lg" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header border-bottom-0 d-flex flex-column">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h3 class="modal-title" id="ModalCenterTitle">Device code</h3>
+                            <p class='f1rem mb-0'>Copy the code and paste it on the page where you want to use this project.</p>
+                            <p class='f1rem'>The form will be displayed in the place where you place the code.</p>
+                        </div>
+                        <div class='modal-body'>
+                            <textarea class='f1rem custom-textarea' id='form_code'></textarea>
+                            <script>
+                                form_code.innerHTML += '<div id="bSd">' + '\n' + '<div class="display">' + '</div>' + '\n' + '</div>' + '\n' + '<style>' + '\n' + '*{' + '\n' + 'box-sizing: border-box;' + '\n' + '}' + '\n' + '#bSd {' + '\n' + 'display: -webkit-box;' + '\n' + 'display: -ms-flexbox;' + '\n' + 'display: flex;' + '\n' + 'background-color: #fff;' + '\n' + 'border-radius: 8px;' + '\n' + 'padding: 25px 7px;' + '\n' + 'position: relative;' + '\n' + 'width: 225px;' + '\n' + 'height: 250px;' + '\n' + '}' + '\n' + '.display {' + '\n' + 'display: -webkit-box;' + '\n' + 'display: -ms-flexbox;' + '\n' + 'display: flex;' + '\n' + '-webkit-box-pack: center;' + '\n' + '-ms-flex-pack: center;' + '\n' + 'justify-content:center;' + '\n' + '-webkit-box-align: center;' + '\n' + '-ms-flex-align: center;' + '\n' + 'align-items: center;' + '\n' + 'width: 100%;' + '\n' + 'background: linear-gradient(45deg, #e5ebf2, #f2f6fa);' + '\n' + 'border-radius: 8px;' + '\n' + 'box-shadow:inset 1px 1px 1px rgba(0,0,0,0.03), inset -1px -1px 1px rgba(0,0,0,0.03);' + '\n' + 'min-height: 150px;' + '\n' + 'overflow: hidden;' + '\n' + '}' + '\n' + '.display * {' + '\n' + 'display: block;' + '\n' + 'width: 100%;' + '\n' + '}' + '\n' + '</style>';
+                            </script>
+                        </div>
+                        <div class="modal-footer border-top-0 mb-2 d-flex justify-content-center">
+                            <button type="button" class="btn gen copy_code mx-2">Copy code</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class='col-sm-4'>
-              <p class='f1rem text-center'>Docs: <a href='https://vk.com/@andrejsharapov-box-shadows-device' title='vkintakte article' itemprop='url' target='_blank'>Ru</a> | <a href='https://medium.com/@andrejsharapov/box-shadows-device-7c1239562c5c' title='medium article' itemprop='url'
-                  target='_blank'>En</a></p>
-            </div>
-          </div>
-
-        </div><!--/ container -->
-      </main>
-
-      <footer itemscope itemtype="http://schema.org/WPFooter" id='footer' role='contentinfo' class='container pt-5 px-5 pb-2'>
-        <div class='row'>
-          <div class='col-sm-12 col-md-6'>
-            <p class='copy f1rem'>&copy; <span itemprop="copyrightYear">2018</span> Box-shadows Device</p>
-          </div>
-          <div class='col-sm-12 col-md-6'>
-            <p class='f1rem text-right'>Created by <a class="text-dark bg-white py-1 px-2 bShadow-7" href="https://twitter.com/andrejsharapov" itemprop='url' title="twitter/@andrejsharapov" style="border-radius:.3rem"><span itemprop="name">@andrejsharapov</span></a></p>
-          </div>
         </div>
-      </footer>
+
     </div>
 
-    <script src="//buttons.github.io/buttons.js"></script>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="//madeas.github.io/box-shadows/device/js/typed.js"></script>
-    <script src="//madeas.github.io/box-shadows/device/js/bootstrap.min.js"></script>
-    <script src="//usocial.pro/usocial/usocial.js?v=6.1.4" async data-script="usocial"></script>
-    <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share" data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile" data-social="fb,gPlus,telegram,twi,vk"></div>
+    <script src='https://buttons.github.io/buttons.js'></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://madeas.github.io/box-shadows/device/js/typed.js"></script>
+    <script src="https://usocial.pro/usocial/usocial.js?v=6.1.4" async data-script="usocial"></script>
+    <div class="uSocial-Share" data-lang="en" data-pid="17e61107c3b1940ce0b85d355f95b474" data-type="share"
+        data-options="round-rect,style1,default,right,slide-down,size32,eachCounter0,counter1,counter-after,nomobile"
+        data-social="fb,gPlus,telegram,twi,vk"></div>
     <script>
-      // добавление класса
-      $(function() {
-        var b = $('.btn_cls');
-        b.click(function() {
-          var cls = $(this).data("cls");
-          $('#bSm').toggleClass(cls);
+        // загрузка сайта
+        $(window).on('load', function () {
+            var $preloader = $('#body_loader'),
+                pre_img = $preloader.find('.pre_loader');
+            pre_img.fadeOut();
+            $preloader.delay(400).fadeOut('slow');
         });
-      });
 
-      // функция drag-and-drop
-      $(function() {
-        $('#dragshadow').draggable();
-        $('#dragdisplay').draggable()
-        $('#dragposition').draggable();
-        $('#dragblock').draggable();
-        $('#dragbuttons').draggable();
-        $('#dragcreate').draggable();
-        $('#drag_back_set').draggable();
-      });
-
-      //добавление стилей из data-stl и выведение в поле #form_code
-      $('.btn').click(function() {
-        $('#bSm').css($(this).data('stl'));
-        var newStyles = $('#bSm').attr('style').replace(/; /g, ';\n');
-        var val = $('#form_code').val();
-        $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
-      });
-
-      // type='color'
-      document.getElementById('bg_choose').onchange = e => {
-        document.getElementById('choose').textContent = e.target.value;
-        document.getElementById('bSm').style.background = e.target.value;
-        let ecls = document.querySelector('#bg_choose');
-        ecls.dataset.cls = e.target.value;
-      }
-
-      // бегущая строка typed display
-      var typed = new Typed("#typed", {
-        strings: [
-          'Can place here:',
-          'code <br /><pre><span class="pl-e">.display</span> {<br /><span class="pl-c1"><span class="pl-c1">  border-radius</span></span>: <span class="pl-c1">8<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  min-height</span></span>: <span class="pl-c1">185<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  padding</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>;<br />}</pre>',
-          'pictures,',
-          'responsive design,',
-          'and much more...',
-        ],
-        onStop: (arrayPos, self) => { // остановка текста по клику
-          console.log('onStop', arrayPos, self);
-        },
-        onStart: (arrayPos, self) => { // старт текста по клику
-          console.log('onStart', arrayPos, self)
-        },
-        onDestroy: (arrayPos, self) => { // удаление текста
-          console.log('onDestroy', arrayPos, self)
-        },
-        onReset: (arrayPos, self) => { // сброс текста
-          console.log('onReset', arrayPos, self)
-        }
-      });
-
-      // текст стоп/старт по клику
-      var checkbox = document.querySelector("input[id=typstop]");
-      checkbox.addEventListener('change', function() {
-        if (this.checked) {
-          // Checkbox is checked..
-          typed.stop();
-        } else {
-          // Checkbox is not checked..
-          typed.start();
-        }
-      });
-
-      // текст сброс/рестарт по клику
-      var checkbox = document.querySelector("input[id=typdest]");
-      checkbox.addEventListener('change', function() {
-        if (this.checked) {
-          // Checkbox is checked..
-          typed.destroy();
-        } else {
-          // Checkbox is not checked..
-          typed.reset();
-        }
-      });
-
-      // генератор стилей
-      document.getElementById('adstl').onchange = e => {
-        let ecls = document.querySelector('#adstl');
-        ecls.dataset.cls = e.target.value;
-        document.getElementById('bSm').style = e.target.value;
-      }
-
-      // добавление классов в id='display'
-      $(function() {
-        var b = $('.btn_dis_cls');
-        b.click(function() {
-          var cls = $(this).data("cls");
-          $('#display').toggleClass(cls);
-        });
-      });
-
-      // добавление классов в id='back'
-      $(function() {
-        var b = $('.btn_back_cls');
-        b.click(function() {
-          var cls = $(this).data("cls");
-          $('#back').toggleClass(cls);
-        });
-      });
-
-      // сохранение кода в буфер обмена
-      var button = document.querySelector('.copy_code');
-      button.addEventListener('click', function(event) {
-        var text = document.querySelector('#form_code');
-        text.select();
-        document.execCommand('copy');
-      });
-
-      // автосайз поля с кодом
-      var textarea = document.querySelector('.custom-textarea');
-      textarea.addEventListener('keydown', autosize);
-
-      function autosize() {
-        var el = this;
-        setTimeout(function() {
-          el.style.cssText = 'height:' + el.scrollHeight + 'px';
-        }, 0);
-      }
-
-      // добавление стикера на заднюю крышку
-      var back = document.querySelector('.back_cover'),
-        x = document.querySelector('#posX'),
-        y = document.querySelector('#posY'),
-        so = document.querySelector('#sizeOne'),
-        st = document.querySelector('#sizeTwo'),
-        si = document.querySelector('#sizeIn');
-      (style = () => {
-        back.style.backgroundImage = 'url(' + document.querySelector('#bgImage').value + ')';
-        back.style.backgroundSize = so.checked ? 'cover' : st.checked ? 'contain' : si.value + 'px';
-        back.style.backgroundRepeat = document.querySelector('[name="repeat"]:checked').parentNode.textContent;
-        back.style.backgroundPosition = x.value + '%' + y.value + '%';
-      })();
-      document.querySelectorAll('input').forEach(el => el.oninput = style);
-
-      // сброс стилей и кнопок
-      NodeList.prototype.forEach = Array.prototype.forEach;
-
-      document.getElementById('reset').addEventListener('click', function(e) {
-        var sideLeft = document.getElementById('sidebar-left');
-        var sideRight = document.getElementById('sidebar-right');
-        var inputsL = sideLeft.querySelectorAll('input[type=radio]');
-        var inputsR = sideRight.querySelectorAll('input[type=radio]');
-        inputsL.forEach(function(el) {
-          el.checked = false;
-        });
-        inputsR.forEach(function(el) {
-          el.checked = false;
-        });
-        bSm.style = '';
-      });
-
-      // добавить/убрать кнопки menu и back
-      var bi = document.getElementById('binone');
-      var bb = document.getElementById('back_button');
-      var mb = document.getElementById('menu_button');
-      bi.addEventListener('change', function() {
-        if (this.checked) {
-          bb.style.display = 'block';
-          mb.style.display = 'block';
-        } else {
-          bb.style.display = 'none';
-          mb.style.display = 'none';
-        }
-      });
-
-      // открыть кнопки разработчика
-      var odb = document.querySelector('.opendev');
-      odb.onclick = e => {
-        e.target.parentNode.style.display = 'none';
-        var devb = document.querySelectorAll('.devbutton');
-        document.querySelectorAll('.devbutton').forEach(n => n.classList.remove('devbutton'));
-      };
-      if (localStorage.getItem('an') == 1) opb.click();
-
-      // вращение устройства
-      var state = true;
-      document.querySelector('.anistop').onclick = () => {
-        document.querySelector('.bsdisplay').style.animationPlayState = state ? 'running' : 'paused';
-        state = !state;
-      };
-
-      // настройка камеры iSight
-      function toggle() {
-        var dbblock = document.getElementById('drag_back_set');
-        if (devplay.checked)
-          dbblock.style.display = 'block';
-        else
-          dbblock.style.display = 'none'
-      }
-      var devplay = document.getElementById('device_play');
-      devplay.addEventListener('change', function() {
-        toggle();
-      });
-
-    </script>
-
-    <script type='application/ld+json'>
-      {
-        "@context": "http://www.schema.org",
-        "@type": "WebSite",
-        "name": "Box-shadows Device (BSD)",
-        "headline": "Box-shadows Device",
-        "description": "Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website",
-        "alternateName": "Box-shadows Device (BSD) – create your device",
-        "url": "https://madeas.github.io/box-shadows/device/"
-      }
-
-    </script>
-
-    <script>
-      (function(d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-          try {
-            w.yaCounter48938060 = new Ya.Metrika({
-              id: 48938060,
-              clickmap: true,
-              trackLinks: true,
-              accurateTrackBounce: true,
-              webvisor: true
+        // добавление класса
+        function func(controller, target) {
+            $(controller).click(function () {
+                $(target).toggleClass(
+                    $(this).data('cls')
+                );
             });
-          } catch (e) {}
+        };
+
+        func('.btn_cls', '.front');
+        func('.bSd_cls', '.bSd');
+        func('.dis_cls', '#display');
+        func('.back_cls', '.back');
+
+        // открыть кнопки разработчика
+        var odb = document.querySelector('.opendev');
+        odb.onclick = e => {
+            e.target.parentNode.style.display = 'none';
+            var devb = document.querySelectorAll('.devbutton');
+            document.querySelectorAll('.devbutton').forEach(n => n.classList.remove('devbutton'));
+        };
+        if (localStorage.getItem('an') == 1) opb.click();
+
+        //добавление стилей из data-stl и выведение в поле #form_code
+        $('.btn').click(function () {
+            $('#bSm').css($(this).data('stl'));
+            var newStyles = $('#bSm').attr('style').replace(/; /g, ';\n');
+            var val = $('#form_code').val();
+            $('#form_code').val(val.replace(/#bSd \{([\s\S]*?)\}/, `#bSd {\n${newStyles}\n}`));
+        });
+    </script>
+    <script type='application/ld+json'>
+        {
+            "@context": "http://www.schema.org",
+            "@type": "WebSite",
+            "name": "Box-shadows Device (BSD)",
+            "headline": "Box-shadows Device",
+            "description": "Box-shadows Device (BSD) is a tool for creating simple and beautiful devices on your website",
+            "alternateName": "Box-shadows Device (BSD) – create your device",
+            "url": "https://madeas.github.io/box-shadows/device/"
+        }
+    </script>
+    <script>
+        // генератор стилей
+        document.getElementById('adstl').onchange = e => {
+            let ecls = document.querySelector('#adstl');
+            ecls.dataset.cls = e.target.value;
+            document.getElementById('bSm').style = e.target.value;
+        }
+
+        // функция drag-and-drop
+        $(function () {
+            $('#dragshadow').draggable();
+            $('#dragdisplay').draggable()
+            $('#dragposition').draggable();
+            $('#dragblock').draggable();
+            $('#dragbuttons').draggable();
+            $('#dragcreate').draggable();
+            $('#drag_back_set').draggable();
         });
 
-        var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function() {
-            n.parentNode.insertBefore(s, n);
-          };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-        } else {
-          f();
+        // type='color'
+        document.getElementById('bg_choose').onchange = e => {
+            document.getElementById('choose').textContent = e.target.value;
+            document.getElementById('bSm').style.background = e.target.value;
+            let ecls = document.querySelector('#bg_choose');
+            ecls.dataset.cls = e.target.value;
         }
-      })(document, window, "yandex_metrika_callbacks");
 
+        // бегущая строка typed display
+        var typed = new Typed("#typed", {
+            strings: [
+                'Can place here:',
+                'code <br /><pre><span class="pl-e">.display</span> {<br /><span class="pl-c1"><span class="pl-c1">  border-radius</span></span>: <span class="pl-c1">8<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  min-height</span></span>: <span class="pl-c1">185<span class="pl-k">px</span></span>;<br /><span class="pl-c1"><span class="pl-c1">  padding</span></span>: <span class="pl-c1">15<span class="pl-k">px</span></span>;<br />}</pre>',
+                'pictures,',
+                'responsive design,',
+                'and much more...',
+            ],
+            onStop: (arrayPos, self) => { // остановка текста по клику
+                console.log('onStop', arrayPos, self);
+            },
+            onStart: (arrayPos, self) => { // старт текста по клику
+                console.log('onStart', arrayPos, self)
+            },
+            onDestroy: (arrayPos, self) => { // удаление текста
+                console.log('onDestroy', arrayPos, self)
+            },
+            onReset: (arrayPos, self) => { // сброс текста
+                console.log('onReset', arrayPos, self)
+            }
+        });
+
+        // текст стоп/старт по клику
+        var checkbox = document.querySelector("input[id=typstop]");
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Checkbox is checked..
+                typed.stop();
+            } else {
+                // Checkbox is not checked..
+                typed.start();
+            }
+        });
+
+        // текст сброс/рестарт по клику
+        var checkbox = document.querySelector("input[id=typdest]");
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                // Checkbox is checked..
+                typed.destroy();
+            } else {
+                // Checkbox is not checked..
+                typed.reset();
+            }
+        });
+
+        // добавить/убрать кнопки menu и back
+        var bi = document.getElementById('binone');
+        var bb = document.getElementById('back_button');
+        var mb = document.getElementById('menu_button');
+        bi.addEventListener('change', function () {
+            if (this.checked) {
+                bb.style.display = 'block';
+                mb.style.display = 'block';
+            } else {
+                bb.style.display = 'none';
+                mb.style.display = 'none';
+            }
+        });
+
+        // вращение устройства
+        var state = true;
+        document.querySelector('.anistop').onclick = () => {
+            document.querySelector('.bsdisplay').style.animationPlayState = state ? 'running' : 'paused';
+            state = !state;
+        };
+
+        // добавление стикера на заднюю крышку
+        var back = document.querySelector('.back_cover'),
+            x = document.querySelector('#posX'),
+            y = document.querySelector('#posY'),
+            so = document.querySelector('#sizeOne'),
+            st = document.querySelector('#sizeTwo'),
+            si = document.querySelector('#sizeIn');
+        (style = () => {
+            back.style.backgroundImage = 'url(' + document.querySelector('#bgImage').value + ')';
+            back.style.backgroundSize = so.checked ? 'cover' : st.checked ? 'contain' : si.value + 'px';
+            back.style.backgroundRepeat = document.querySelector('[name="repeat"]:checked').parentNode.textContent;
+            back.style.backgroundPosition = x.value + '%' + y.value + '%';
+        })();
+        document.querySelectorAll('input').forEach(el => el.oninput = style);
+
+        // автосайз поля с кодом
+        var textarea = document.querySelector('.custom-textarea');
+        textarea.addEventListener('keydown', autosize);
+
+        function autosize() {
+            var el = this;
+            setTimeout(function () {
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            }, 0);
+        }
+
+        // сброс стилей и кнопок
+        NodeList.prototype.forEach = Array.prototype.forEach;
+
+        document.getElementById('reset').addEventListener('click', function (e) {
+            var sideLeft = document.getElementById('sidebar-left');
+            var sideRight = document.getElementById('sidebar-right');
+            var inputsL = sideLeft.querySelectorAll('input[type=radio]');
+            var inputsR = sideRight.querySelectorAll('input[type=radio]');
+            inputsL.forEach(function (el) {
+                el.checked = false;
+            });
+            inputsR.forEach(function (el) {
+                el.checked = false;
+            });
+            bSm.style = '';
+        });
+
+        // настройка камеры iSight
+        function toggle() {
+            var dbblock = document.getElementById('drag_back_set');
+            if (devplay.checked)
+                dbblock.style.display = 'block';
+            else
+                dbblock.style.display = 'none'
+        }
+        var devplay = document.getElementById('device_play');
+        devplay.addEventListener('change', function () {
+            toggle();
+        });
+
+        // сохранение кода в буфер обмена
+        var button = document.querySelector('.copy_code');
+        button.addEventListener('click', function (event) {
+            var text = document.querySelector('#form_code');
+            text.select();
+            document.execCommand('copy');
+        });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/48938060" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  </body>
+
+    <script>
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter48938060 = new Ya.Metrika({
+                        id: 48938060,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/48938060" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+</body>
 
 </html>
