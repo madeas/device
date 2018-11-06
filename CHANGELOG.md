@@ -1,5 +1,9 @@
 # Changes in the functionality of devices
 
+### November 06, 2018
+
+* The project is renamed to Device Creator.
+
 ### August 09, 2018
 
 * Ability to change the appearance and position of the rear camera iSight. The view of the camera also varies depending on the angle of the device
